@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+    box-sizing: border-box;}
+body{
+    margin:0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    background: url('./images/pw.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+header{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #262626;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.logo{
+    color: #fff;
+    height: 60px;
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+nav{
+    float: right;
+
+}
+.clearfix{
+    clear: both;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a.active,
+nav ul li a:hover
+{
+    background: rgb(247,5,138);
+     color: #fff;
+    transition: 0.5s;
+}
+@media (max-width: 1250px)
+{
+header{
+    margin: 20px;
+}
+}
+@media (max-width: 768px)
+{
+.menu-toggle{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+
+}
+.menu-toggle:before{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    line-height: 40px;
+}
+.menu-toggle.active:before{
+    content: '\f00d';
+    
+}
+nav{
+    display: none;
+}
+nav.active{
+    display: block;
+    width: 100%;
+}
+nav.active ul{
+    display: block;
+}
+nav.active ul li a{
+    margin: 0;
+}
+
+
+}
+
+    
+.footer 
+{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #262626;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        margin-top: 50em;
+    
+      }
+ 
+    
+.media{
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-53%, -50%);
+
+}
+ 
+     .social-links{
+       align-items: center;
+    }
+    .social-links a{
+        height: 30px;
+        width: 40px;
+        background-color:rgb(26, 33, 39);
+        border-radius: 50px;
+        display: inline-block;
+        border: 2px solid #ffffff;
+        line-height: 2px;
+        text-align: center;
+        /* margin: 80px; */
+        -webkit-transition: all .5s ease;
+         transition: all .5s ease;
+        list-style-position: inside;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        align-items: center;
+         
+    }
+    
+    .social-links:hover{
+        background-color: transparent;
+        
+    }
+    .social-links a .fa{
+        color: white;
+        font-size: 20px;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+        padding-top: 2px;
+        
+    }
+
+    .social-links a:hover .fa{
+color:rgb(248, 35, 184);
+    
+    } 
+    
+    .bella{
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+        
+    }
+    .work{
+        text-align: center;
+        color: rgb(156, 94, 109);
+       font-size: 30px;
+        
+    }
+    .intro{
+        padding-top: 8%;
+    }
+
+    .headings{
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        
+    }
+
+    .dp{
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+        width: 250px;
+        height: 150px;
+        border-radius: 4%; 
+      }
+
+    .info{
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10%;
+        font-weight: 800;
+       
+
+
+    }
+    /* boxes of portfolio */
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: .75em;
+        padding: .75em;
+        padding-bottom: 20%;
+        padding-top: 5%;
+          
+        
+    }
+
+    .cards .card{
+        box-shadow: 0 4px 8px 0 rgba(233, 8, 113,0.61);
+        margin: auto;
+        text-align: center;
+        background-color: rgba(225, 225, 225, 0.884);
+
+    }
+    .cards .card img{
+        height:180px;
+       
+        
+    }
+    @media screen and (min-width: 769px){
+        .cards {
+            grid-template-columns: 1fr 1fr 1fr ;
+        }
+    }
+
+    .hr{
+        font-size: small;
+    }
+
+    .brand{
+        font-size: small;
+    }
+    .brands{
+        font-size:small;
+       
+        
+        
+    }
+
+    .title{
+     font-weight: 600;
+     color: #9e0e0e;
+    }
+
+    input[type=text], select, textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+      }
+      
+      
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+      
+      /* Submit button */
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      
+      /* contact page*/
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f299;
+        padding: 20px;
+        margin-bottom: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      
+
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      
+
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+      
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      
+      @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+
+        
+      } 
+      

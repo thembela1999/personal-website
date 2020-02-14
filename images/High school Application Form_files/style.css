@@ -1,0 +1,71 @@
+h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h3{
+    text-align: center;
+}
+
+labels{
+    text-align: center;
+}
+
+body{
+    background-color: lightgray;
+   
+}
+
+/* .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-radius: 25%;
+} */
+/* img{
+    border-radius: 8px;
+    align-self: center;
+} */
+
+
+
+/* #list{
+    shape-outside: ;
+} */
+
+/* #contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+    column-rule-style: inherit;
+    column-width: 100%; 
+
+} */
+
+#copies{
+    display: inline-flexbox;
+   
+}
+
+#go{
+  /* float: right; */
+  text-align:center;
+    color: black;
+    font-size: medium;
+    margin: 8px 0;
+     padding: 12px 20px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+button{
+float: inherit;
+padding: 6px 10px;
+}
